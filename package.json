@@ -12,7 +12,7 @@
     "css"
   ],
   "repository": {
-    "url": "git@github.com:Ticketfly/ticketfly-css.git",
+    "url": "https://github.com/Ticketfly-UI/ticketfly-css-spacing-variables.git",
     "type": "git"
   },
   "files": [
@@ -21,9 +21,9 @@
     "index.css"
   ],
   "bugs": {
-    "url": "https://github.com/Ticketfly/ticketfly-css/issues"
+    "url": "https://github.com/Ticketfly-UI/ticketfly-css-spacing-variables/issues"
   },
-  "homepage": "https://github.com/Ticketfly/ticketfly-css/issues",
+  "homepage": "https://github.com/Ticketfly-UI/ticketfly-css-spacing-variables",
   "author": "Brian Sipple <@Brian_Sipple>",
   "license": "MIT",
   "dependencies": {
