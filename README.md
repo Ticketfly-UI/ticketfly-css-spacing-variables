@@ -15,7 +15,7 @@ paddings, grid gutters, vertical rhythm, and more.
 
 Spacing constants are defined using [_geometric progression_](https://en.wikipedia.org/wiki/Geometric_progression)
 &mdash; with a base spacing value of `1rem` (equivalent to 16px under
-default browser settings) and a common ratio of
+default browser settings) and a common ratio of 2.
 
 
 ## Installation
