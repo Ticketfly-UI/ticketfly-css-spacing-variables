@@ -1,3 +1,8 @@
+# 0.0.5 &mdash; December 29, 2016
+
+- **[ADDED]** Variables to express common spacing concepts.
+
+
 # 0.0.4 &mdash; December 29, 2016
 
 - **[CHANGED]** Scale now aligns the base spacing unit with `spacing-md` ([#1](https://github.com/Ticketfly-UI/ticketfly-css-spacing-variables/pull/1)).

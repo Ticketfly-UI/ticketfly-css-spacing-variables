@@ -54,6 +54,7 @@
 
 
   /* ---------------- CONCEPTUAL VARIABLES ---------------- */
+
   --spacing-inset-default: var(--spacing-md) var(--spacing-md) var(--spacing-md) var(--spacing-md);
 
   /**
