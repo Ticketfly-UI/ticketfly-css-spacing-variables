@@ -30,7 +30,7 @@ html {
 
 .demo-grid-label,
 .demo-grid-box {
-  height: 7rem;
+  height: 5rem;
   display: flex;
   align-items: center;
 }
@@ -63,4 +63,7 @@ html {
 }
 .demo-grid-box.demo-grid-box--xl {
   width: var(--spacing-xl);
+}
+.demo-grid-box.demo-grid-box--xxl {
+  width: var(--spacing-xxl);
 }
