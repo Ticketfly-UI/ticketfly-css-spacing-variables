@@ -4,8 +4,10 @@
 
   --common-ratio: 2;
 
+  /* ---------------- SPACING SCALE ---------------- */
 
   /**
+   *
    * 1) Set the "sm" value relative to
    * our base spacing unit
    *
@@ -49,4 +51,79 @@
     var(--spacing-xl) *
     var(--common-ratio)
   );
+
+
+  /* ---------------- CONCEPTUAL VARIABLES ---------------- */
+  --spacing-inset-default: var(--spacing-md) var(--spacing-md) var(--spacing-md) var(--spacing-md);
+
+  /**
+   * INSETS
+   *
+   * 1) Squared indent spacing: Compresses content on all four sides
+   * (think of the inner framing for a photo on the wall)
+   *
+   * 2) Squished indent spacing: Reduces top and bottom space by 50%.
+   * Useful for buttons and cell-like containers such
+   * as a data table row or a list item.
+   *
+   * 3) Stretched indent spacing: Extra vertical spacing.
+   * Useful for elements whose size is prown to grown vertically (such
+   * as a textarea) or elements that are commonly blocks in a
+   * vertical flow (such as text field for any other form element)
+   */
+
+  /* 1 */
+
+  --spacing-inset-xs: var(--spacing-xs) var(--spacing-xs) var(--spacing-xs) var(--spacing-xs);
+  --spacing-inset-sm: var(--spacing-sm) var(--spacing-sm) var(--spacing-sm) var(--spacing-sm);
+  --spacing-inset-md: var(--spacing-md) var(--spacing-md) var(--spacing-md) var(--spacing-md);
+  --spacing-inset-lg: var(--spacing-lg) var(--spacing-lg) var(--spacing-lg) var(--spacing-lg);
+  --spacing-inset-xl: var(--spacing-xl) var(--spacing-xl) var(--spacing-xl) var(--spacing-xl);
+
+  /* 2 */
+
+  --spacing-inset-squish-sm:
+    calc(var(--spacing-sm) / 2)
+    var(--spacing-sm)
+    calc(var(--spacing-sm) / 2)
+    var(--spacing-sm);
+
+  --spacing-inset-squish-md:
+    calc(var(--spacing-md) / 2)
+    var(--spacing-md)
+    calc(var(--spacing-md) / 2)
+    var(--spacing-md);
+
+  --spacing-inset-squish-lg:
+    calc(var(--spacing-lg) / 2)
+    var(--spacing-lg)
+    calc(var(--spacing-lg) / 2)
+    var(--spacing-lg);
+
+  /* 3 */
+
+  --spacing-inset-stretch-sm:
+    calc(var(--spacing-sm) * 1.5)
+    var(--spacing-sm)
+    calc(var(--spacing-sm) * 1.5)
+    var(--spacing-sm);
+
+  --spacing-inset-stretch-md:
+    calc(var(--spacing-md) * 1.5)
+    var(--spacing-md)
+    calc(var(--spacing-md) * 1.5)
+    var(--spacing-md);
+
+  /**
+   * STACKING
+   *
+   * Helpers for the different spacing values comprising
+   * that comprise a vertical rythm: stacked copy, stacked
+   * pills, stacked toolbars, stacked headings on form fields, etc.
+   */
+  --spacing-stack-xs: 0 0 var(--spacing-xs) 0;
+  --spacing-stack-sm: 0 0 var(--spacing-sm) 0;
+  --spacing-stack-md: 0 0 var(--spacing-md) 0;
+  --spacing-stack-lg: 0 0 var(--spacing-lg) 0;
+  --spacing-stack-xl: 0 0 var(--spacing-xl) 0;
 }
