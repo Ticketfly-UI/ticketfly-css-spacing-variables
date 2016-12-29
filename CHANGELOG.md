@@ -1,3 +1,8 @@
+# 0.0.2 (December 28, 2016)
+
+- **[PATCH]**: Make `ticketfly-css-core-variables` a first-class `dependency`.
+
+
 # 0.0.1 (December 28, 2016)
 
 - Initial spacing variables
