@@ -1,11 +1,17 @@
+# 0.0.4 &mdash; December 29, 2016
+
+- **[CHANGED]** Scale now aligns the base spacing unit with `spacing-md` ([#1](https://github.com/Ticketfly-UI/ticketfly-css-spacing-variables/pull/1)).
+- **[ADDED]** `spacing-xxl` variable ([#1](https://github.com/Ticketfly-UI/ticketfly-css-spacing-variables/pull/1))..
+
+
 # 0.0.3 &mdash; December 28, 2016
 
-- **[PATCH]**: Fix repository paths in `package.json`.
+- **[PATCHED]** Fix repository paths in `package.json`.
 
 
 # 0.0.2 &mdash; December 28, 2016
 
-- **[PATCH]**: Make `ticketfly-css-core-variables` a first-class `dependency`.
+- **[PATCHED]** Make `ticketfly-css-core-variables` a first-class `dependency`.
 
 
 # 0.0.1 &mdash; December 28, 2016
