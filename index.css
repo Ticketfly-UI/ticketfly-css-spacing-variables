@@ -8,15 +8,15 @@
 
   /**
    *
-   * 1) Set the "sm" value relative to
-   * our base spacing unit
+   * 1) Set the "md" value relative to
+   * our base spacing unit.
    *
    * 2) Backtrack initially to set values
-   * less than "sm"
+   * below the base.
    *
    * 3) Move forward on the scale, deriving each
    * new value from the product of the previous
-   * setting and the common ratio
+   * setting and the common ratio.
    */
 
   /* 1 */
