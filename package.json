@@ -36,19 +36,22 @@
     "npmpub": "^3.1.0",
     "postcss-cli": "^2.6.0",
     "postcss-cssnext": "^2.9.0",
-    "postcss-import": "^9.0.0"
+    "postcss-import": "^9.0.0",
+    "stylelint": "^7.8.0",
+    "stylelint-config-ticketfly": "^0.1.0"
   },
   "scripts": {
     "clean": "del build/**",
     "setup": "mkdir -p build",
     "transform": "postcss --config postcss.config.js",
     "minify": "postcss -u cssnano build/ticketfly-css-spacing-variables.css -o build/ticketfly-css-spacing-variables.min.css",
-    "build": "npm run transform",
+    "build:dist": "npm run setup && npm run transform",
+    "build:dist:min": "npm run build:dist && npm run minify",
     "build:test": "npm run clean && postcss -u postcss-import -u postcss-cssnext test/index-test.css -o build/test.css",
-    "build:min": "npm run build && npm run minify",
-    "prepublish": "npm run clean && npm run setup && npm run build",
+    "prepublish": "npm run clean && npm run setup && npm run build:dist",
     "serve:test": "npm run build:test && http-server -p 4802 -o",
-    "test": "npm run build:test",
+    "lint:css": "npm run setup && postcss --config test/postcss.config.js && rm build/lint.css",
+    "test": "npm run lint:css",
     "release": "npmpub"
   }
 }

@@ -4,7 +4,15 @@ module.exports = {
   output: 'build/ticketfly-css-spacing-variables.css',
 
   use: [
-    'postcss-cssnext',
-    'postcss-import'
-  ]
+    'postcss-import',
+    'postcss-cssnext'
+  ],
+
+  'postcss-cssnext': {
+    features: {
+      customProperties: {
+        preserve: true
+      }
+    }
+  }
 };
