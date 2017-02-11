@@ -2,8 +2,8 @@
   "name": "ticketfly-css-spacing-variables",
   "version": "0.0.5",
   "description": "Variables for the Ticketfly CSS spacing system",
-  "main": "index.css",
-  "style": "index.css",
+  "main": "build/ticketfly-css-spacing-variables.css",
+  "style": "build/ticketfly-css-spacing-variables.css",
   "keywords": [
     "ticketfly-css",
     "ticketfly-css spacing",
@@ -16,8 +16,7 @@
     "type": "git"
   },
   "files": [
-    "CHANGELOG.md",
-    "LICENSE",
+    "build/",
     "index.css"
   ],
   "bugs": {
