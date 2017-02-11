@@ -11,7 +11,7 @@ module.exports = {
   'postcss-cssnext': {
     features: {
       customProperties: {
-        preserve: true
+        preserve: "computed"
       }
     }
   }
